@@ -23,3 +23,5 @@ Zenn CLI を使って記事作成や公開フローを効率化するための�
 ## GitHub IaC
 
 - 実行フロー: `cd terraform && terraform init && terraform plan` で内容確認 → `terraform apply` で GitHub に反映
+
+- `export GITHUB_TOKEN=$(gh auth token)`
