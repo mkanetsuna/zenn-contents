@@ -3,4 +3,4 @@ node_modules
 .terraform/
 *.tfstate
 *.tfstate.backup
-*.tfvars
+terraform/terraform.tfvars
