@@ -1,0 +1,24 @@
+{
+  "name": "zenn-contents",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "postCreateCommand": "npm install -g zenn-cli@latest && if [ ! -d articles ]; then zenn init; fi",
+  "updateContentCommand": "bash -lc 'if ! command -v zenn >/dev/null 2>&1; then npm install -g zenn-cli@latest; fi; if [ ! -d articles ]; then zenn init; fi'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "openai.chatgpt"
+      ],
+      "settings": {
+        "editor.formatOnSave": true
+      }
+    }
+  },
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Zenn Preview"
+    }
+  }
+}
