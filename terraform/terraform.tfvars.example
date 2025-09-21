@@ -1,5 +1,4 @@
 # Copy this file to terraform.tfvars or provide variables via CLI/environment.
 github_owner = "your-github-handle"
 repository_name = "zenn-contents"
-required_approving_review_count = 0
 branch_pattern = "main"
