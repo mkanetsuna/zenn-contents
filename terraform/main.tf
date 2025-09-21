@@ -8,7 +8,7 @@ data "github_repository" "target" {
 
 resource "github_branch_protection" "main" {
   repository_id = data.github_repository.target.node_id
-  pattern        = "main"
+  pattern        = var.branch_pattern
 
   enforce_admins        = true
   allows_force_pushes   = false
