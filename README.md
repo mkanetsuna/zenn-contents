@@ -22,6 +22,6 @@ Zenn CLI を使って記事作成や公開フローを効率化するための�
 
 ## GitHub IaC
 
+- `repo` スコープを持つ PAT を発行し `export GITHUB_TOKEN=$(gh auth token)` などで Terraform から利用
+- 初回は `terraform/terraform.tfvars.example` を `terraform/terraform.tfvars` にコピーし、自分の `github_owner` と `repository_name` を設定
 - 実行フロー: `cd terraform && terraform init && terraform plan` で内容確認 → `terraform apply` で GitHub に反映
-
-- `export GITHUB_TOKEN=$(gh auth token)`
