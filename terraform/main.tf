@@ -14,7 +14,7 @@ resource "github_branch_protection" "main" {
   allows_force_pushes             = false
   allows_deletions                = false
   lock_branch                     = false
-  require_signed_commits          = true
+  require_signed_commits          = false
   require_conversation_resolution = true
 
   required_pull_request_reviews {
