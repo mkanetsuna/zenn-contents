@@ -8,17 +8,23 @@
       "extensions": [
         "esbenp.prettier-vscode",
         "streetsidesoftware.code-spell-checker",
-        "openai.chatgpt"
+        "openai.chatgpt",
+        "hashicorp.terraform"
       ],
       "settings": {
         "editor.formatOnSave": true
       }
     }
   },
-  "forwardPorts": [8000],
+  "forwardPorts": [
+    8000
+  ],
   "portsAttributes": {
     "8000": {
       "label": "Zenn Preview"
     }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/terraform:1": {}
   }
 }
