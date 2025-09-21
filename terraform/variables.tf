@@ -11,9 +11,5 @@ variable "repository_name" {
 variable "branch_pattern" {
   description = "Branch name pattern to apply protections to."
   type        = string
-}
-variable "branch_pattern" {
-  description = "Branch name pattern to apply protections to."
-  type        = string
   default     = "main"
 }
